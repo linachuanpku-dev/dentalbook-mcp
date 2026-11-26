@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "dentalbook-user": {
+      "command": "/usr/local/bin/node",
+      "args": ["$HOME/.dentalbook/mcp-user/current/dist/index.js"],
+      "env": {
+        "DENTALBOOK_USER_CONFIG": "$HOME/.dentalbook/user.json",
+        "DENTALBOOK_MCP_UI_DIR": "$HOME/.dentalbook/mcp-user/current/mcp-ui",
+        "DENTALBOOK_MCP_VERSION": "0.1.0"
+      }
+    }
+  }
+}

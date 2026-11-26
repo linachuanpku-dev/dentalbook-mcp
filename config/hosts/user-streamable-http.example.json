@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "dentalbook-user": {
+      "type": "http",
+      "url": "http://127.0.0.1:7340/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DENTALBOOK_USER_TOKEN}"
+      }
+    }
+  }
+}

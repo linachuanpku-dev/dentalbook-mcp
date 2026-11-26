@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dentalbook Full-text Retrieval"
+  short_description: "Retrieve and verify dental paper full text safely"
+  default_prompt: "Use $dentalbook-fulltext-retrieval to obtain and verify this paper."

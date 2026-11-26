@@ -1,0 +1,29 @@
+{
+  "name": "dentalbookv5",
+  "version": "0.1.0",
+  "description": "Private dental literature tools, workflows, author index, and MCP Apps backed by the shared Dentalbook Web and domain service.",
+  "author": {
+    "name": "Dentalbook"
+  },
+  "license": "UNLICENSED",
+  "keywords": ["dentistry", "literature", "citations", "mcp", "mcp-apps"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Dentalbook v5",
+    "shortDescription": "Show the current Dentalbook literature list UI and verified literature workflows.",
+    "longDescription": "Connects a general-purpose agent to private Dentalbook literature services, including the current literature list UI / shared library UI, verified citation workflows, author exploration, and optional MCP Apps UI.",
+    "developerName": "Dentalbook",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": [
+      "Check Dentalbook service health and capabilities.",
+      "Show the Dentalbook MCP App compatibility probe.",
+      "Show the current Dentalbook literature list UI / shared library UI and PDF download states.",
+      "显示当前文献列表界面给我看。",
+      "Upload a PDF from my configured local import folder into the shared library.",
+      "Explain which Dentalbook business tools are available."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dentalbook Citation Audit"
+  short_description: "Audit PDF and quote proof for every citation"
+  default_prompt: "Use $dentalbook-citation-audit to verify every citation in this draft."

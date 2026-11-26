@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "dentalbook-admin": {
+      "type": "http",
+      "url": "https://dentalbook.example.invalid/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DENTALBOOK_ADMIN_TOKEN}"
+      }
+    }
+  }
+}

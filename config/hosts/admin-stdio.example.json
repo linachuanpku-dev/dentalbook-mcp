@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dentalbook-admin": {
+      "command": "/absolute/path/to/dentalbookv5/scripts/start-admin-mcp-stdio.sh",
+      "args": []
+    }
+  }
+}

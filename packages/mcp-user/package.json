@@ -1,0 +1,16 @@
+{
+  "name": "@dentalbook/mcp-user",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/server.test.js dist/http.test.js dist/mcp-release.test.js"
+  },
+  "dependencies": {
+    "@dentalbook/domain-contracts": "*",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  }
+}

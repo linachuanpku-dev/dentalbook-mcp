@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dentalbook Evidence Reading"
+  short_description: "Read papers into traceable evidence cards"
+  default_prompt: "Use $dentalbook-evidence-reading to extract traceable evidence from these papers."

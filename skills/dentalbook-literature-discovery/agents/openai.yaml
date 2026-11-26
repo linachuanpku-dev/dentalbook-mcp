@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dentalbook Literature Discovery"
+  short_description: "Find dental literature with honest availability states"
+  default_prompt: "Use $dentalbook-literature-discovery to find literature for this clinical question."

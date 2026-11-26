@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dentalbook-user": {
+      "command": "/absolute/path/to/dentalbookv5/scripts/start-user-mcp.sh",
+      "args": []
+    }
+  }
+}

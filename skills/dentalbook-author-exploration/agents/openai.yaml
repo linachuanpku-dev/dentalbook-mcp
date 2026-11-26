@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dentalbook Author Exploration"
+  short_description: "Explore authors, institutions, and sourced relations"
+  default_prompt: "Use $dentalbook-author-exploration to map this author and their relationships."

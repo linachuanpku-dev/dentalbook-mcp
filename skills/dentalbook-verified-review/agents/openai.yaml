@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dentalbook Verified Review"
+  short_description: "Draft reviews backed by verified Dentalbook citations"
+  default_prompt: "Use $dentalbook-verified-review to draft a citation-grounded review."

@@ -1,0 +1,17 @@
+{
+  "name": "@dentalbook/center-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/author-id.test.js dist/server.test.js"
+  },
+  "dependencies": {
+    "@dentalbook/domain-contracts": "*",
+    "pdfjs-dist": "^5.4.149"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}

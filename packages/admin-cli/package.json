@@ -1,0 +1,12 @@
+{
+  "name": "@dentalbook/admin-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "dentalbook-admin": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  }
+}

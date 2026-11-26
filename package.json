@@ -1,0 +1,35 @@
+{
+  "name": "dentalbook-v5",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dentalbook v5 private literature web, shared domain service, and agent-friendly MCP interfaces.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build": "npm run build -w @dentalbook/domain-contracts && npm run build -w @dentalbook/ui-kit && npm run build -w @dentalbook/mcp-ui && npm run build -w @dentalbook/web && npm run build -w @dentalbook/center-service && npm run build -w @dentalbook/mcp-user && npm run build -w @dentalbook/mcp-admin && npm run build -w @dentalbook/admin-cli",
+    "build:mcp-release": "node scripts/build-mcp-user-release.mjs",
+    "test": "npm run test -w @dentalbook/center-service && npm run test -w @dentalbook/mcp-user && npm run test -w @dentalbook/mcp-admin && node --test tests/*.test.mjs",
+    "validate:skills": "node scripts/validate-skills.mjs",
+    "validate:plugin": "node scripts/validate-plugin.mjs",
+    "validate:links": "node scripts/validate-links.mjs",
+    "validate:json": "node scripts/validate-json.mjs",
+    "check": "npm run build && npm test && npm run validate:json && npm run validate:links && npm run validate:skills && npm run validate:plugin",
+    "start:user": "node packages/mcp-user/dist/index.js",
+    "start:user:http": "DENTALBOOK_USER_MCP_TRANSPORT=http node packages/mcp-user/dist/index.js",
+    "start:center": "node packages/center-service/dist/index.js",
+    "start:admin": "node packages/mcp-admin/dist/index.js",
+    "dentalbook-admin": "node packages/admin-cli/dist/index.js",
+    "verify:enrichment-recall": "node scripts/verify-enrichment-recall.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
